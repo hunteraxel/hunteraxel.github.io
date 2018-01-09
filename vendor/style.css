@@ -2,6 +2,10 @@
 	height: 150px;
 	margin-left: 33px;
 }
+
+.ico {
+	margin-top: 30px;
+}
 body {
 	background-image: url("../background.jpg");
 }
@@ -41,6 +45,7 @@ body {
 #main {
 	background-color: #930000;
 	padding-top: 1px;
+	padding-bottom: 30px;
 }
 
 #welcome, #skills {
@@ -50,10 +55,15 @@ body {
 	padding: 20px;
 	margin-top: 5px;
 	border-radius: 5px; 
+	padding-bottom: 100px;
 }
 
 #skills h3 {
-	margin: 10px 10px 20px 40px;
+	margin: 30px 10px 20px 40px;
+}
+
+#welcome p {
+	margin-top: 30px;
 }
 
 #skills h1 {
@@ -65,18 +75,34 @@ body {
 	margin: 10px 0 20px 340px;
 }
 
-#projects {
+#projects, #foot {
 	background-color: black;
 	color: white;
 	font-family: 'Playfair Display SC', serif;
 	margin-top: 5px;
+	padding-bottom: 20px;
 }
 
 #projects h1 {
 	margin-left: 40px;
+	margin-top: 20px;
 }
+
 .pro {
 	margin-top: 135px;
+}
+
+#foot{
+	background-color: black;
+	color: white;
+	font-family: 'Playfair Display SC', serif;
+	margin-top: -25px;
+	padding: 10px;
+}
+
+#foot a {
+	margin-left:90%;
+	color: white;
 }
 
 #mo {
