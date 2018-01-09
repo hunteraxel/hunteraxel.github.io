@@ -1,3 +1,7 @@
+.icol {
+	height: 150px;
+	margin-left: 33px;
+}
 body {
 	background-image: url("../background.jpg");
 }
@@ -29,9 +33,50 @@ body {
 }
 
 #titre {
-	margin-top: 20px;
+	margin-top: 30px;
 	color: white;
-	margin-left: 50px;
+	margin-left: 20px;
+}
+
+#main {
+	background-color: #930000;
+	padding-top: 1px;
+}
+
+#welcome, #skills {
+	background-color: white;
+	width: 102.71%;
+	font-family: 'Playfair Display SC', serif;
+	padding: 20px;
+	margin-top: 5px;
+	border-radius: 5px; 
+}
+
+#skills h3 {
+	margin: 10px 10px 20px 40px;
+}
+
+#skills h1 {
+	margin-left: 25px;
+}
+
+#welcome h3 {
+	font-size: 30px;
+	margin: 10px 0 20px 340px;
+}
+
+#projects {
+	background-color: black;
+	color: white;
+	font-family: 'Playfair Display SC', serif;
+	margin-top: 5px;
+}
+
+#projects h1 {
+	margin-left: 40px;
+}
+.pro {
+	margin-top: 135px;
 }
 
 #mo {
@@ -59,7 +104,7 @@ p {text-align: center;}
 	background:  url(../block.png) 0 100% repeat-x;
 	background-size: contain;
 	z-index: 2;
-	width: 102.7%;
+	width: 102.71%;
 	height: 40px;
 	margin-left: -15px;
 	margin-top: -20px;
@@ -68,4 +113,47 @@ p {text-align: center;}
 @keyframes parallax_mg {  
 	0% { background-position: -600px 100%;} 
 	100% {background-position: 0 100%; } 
+}
+
+.flippingcard {
+	position: relative;
+	display: inline-block;
+}
+div[class^="card"] {
+	height: 300px;
+	width: 300px;
+	perspective-origin: center bottom;
+	position: relative;
+	margin: 20px 20px 20px 57px;
+	cursor: pointer;
+}
+div[class^="card"] [class^="face"] {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	backface-visibility: hidden;
+	transform-style: preserve-3d;
+	transition-duration: 0.5s;
+	transition-property: transform;
+	transition-timing-function: ease-out;
+}
+div[class^="card"] .face-front {
+	border: 0.2px white;
+	border-style: double;
+	z-index: 5;
+}
+div[class^="card"] .face-back {
+	background-color: #D2D0D0;
+	z-index: 0;
+	transform: rotateY(-180deg);
+}
+div[class^="card"].rotated .face-front {
+	z-index: 5;
+	transform: rotateY(180deg);
+}
+div[class^="card"].rotated .face-back {
+	z-index: 10;
+	transform: rotateY(0deg);
 }
